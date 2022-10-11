@@ -17,7 +17,7 @@ using System.Threading.Tasks;
 
 namespace eAuctionAPI.Controllers
 {
-    //[Authorize]
+    [Authorize]
     //[Route("api/v1/[controller]/[action]")] //Commented for publish
     [ApiController]
     public class BuyerController : ControllerBase

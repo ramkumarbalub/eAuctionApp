@@ -18,7 +18,7 @@ using System.Text;
 
 namespace eAuctionAPI.Controllers
 {
-   // [Authorize]
+    //[Authorize]
     
     //[Route("api/v1/[controller]/[action]")]
     [ApiController]
@@ -195,7 +195,7 @@ namespace eAuctionAPI.Controllers
             }
         }
         
-
+        [Authorize]
         //[ActionName("listProduct")]
         [HttpGet]
         [Route("/v1/Seller/ListProductName")]

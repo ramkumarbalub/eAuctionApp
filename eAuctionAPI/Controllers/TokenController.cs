@@ -18,7 +18,7 @@ namespace eAuctionAPI.Controllers
         {
             _tokenManager = jwtTokenManager;
         }
-        //[AllowAnonymous]
+        [AllowAnonymous]
         //[HttpPost("Authenticate")]
         [HttpPost]
         [Route("/v1/Token/Authenticate")]
@@ -27,7 +27,7 @@ namespace eAuctionAPI.Controllers
             var token = _tokenManager.Authenticate(credential.UserName, credential.Password);
             if (string.IsNullOrEmpty(token))
                 return Unauthorized();
-            return Ok(token);
+            return Ok(new { Token = token });
         }
     }
 }

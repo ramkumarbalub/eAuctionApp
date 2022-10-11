@@ -10,7 +10,8 @@ namespace eAuctionAPI
         public static Dictionary<string, string> Users = new Dictionary<string, string>
         {
             { "SampleUser", "password" },
-            { "DemoUser", "password"}
+            { "DemoUser", "password"},
+            { "admin", "password" }
         };
     }
 }
